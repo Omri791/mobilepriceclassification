@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Entraînement du Modèle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>{{ message }}</h1>
+        <p><strong>Précision du modèle :</strong> {{ accuracy }}</p>
+        <p><strong>Rappel (Macro) :</strong> {{ recall }}</p>
+        <p><strong>Score F1 (Macro) :</strong> {{ f1_score }}</p>
+
+        <h3>Matrice de Confusion</h3>
+        <img src="{{ confusion_image }}" alt="Matrice de Confusion" class="img-fluid mb-4">
+
+        <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <!-- Bootstrap JS (optionnel, si vous avez besoin de fonctionnalités supplémentaires comme le dropdown) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
